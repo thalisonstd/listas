@@ -8,10 +8,15 @@ btn.addEventListener("click", () => {
   }
   else{
     const item = document.createElement("li")
+    
 
-    item.textContent = input.value
-  
+    item.textContent = input.value  
     list.appendChild(item)
+    const deleteBtn = document.createElement("button")
+    deleteBtn.innerHTML = "Deletar"
+    deleteBtn.addEventListener("click", () =>{
+      
+    })
     input.value = ""
   }
   
